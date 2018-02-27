@@ -1,0 +1,3 @@
+rootProject.name = 'monorepo'
+
+include ':app'

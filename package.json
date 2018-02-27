@@ -1,0 +1,21 @@
+{
+	"name": "monorepo",
+	"version": "0.0.1",
+	"scripts": {
+		"clean": "lerna clean && rm -r ./web/build",
+		"ios": "bash ./scripts/mobile.sh 'yarn run ios'",
+		"android": "bash ./scripts/mobile.sh 'yarn run android'",
+		"native:dev": "bash ./scripts/mobile.sh 'yarn run start'",
+		"web:dev": "bash ./scripts/web.sh 'yarn run dev'"
+	},
+	"devDependencies": {
+		"babel-eslint": "^8.2.2",
+		"eslint": "^4.18.1",
+		"eslint-config-airbnb": "^16.1.0",
+		"eslint-plugin-import": "^2.9.0",
+		"eslint-plugin-jsx-a11y": "^6.0.3",
+		"eslint-plugin-react": "^7.7.0",
+		"lerna": "^2.9.0"
+	},
+	"license": "ISC"
+}
