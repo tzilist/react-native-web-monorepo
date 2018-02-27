@@ -54,3 +54,5 @@ buck-out/
 
 # Lerna
 lerna-debug.log
+
+.vscode/
