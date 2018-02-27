@@ -1,0 +1,9 @@
+{
+  "lerna": "2.9.0",
+  "packages": [
+    "./mobile",
+    "./web"
+  ],
+  "npmClient": "yarn",
+  "version": "0.0.3"
+}
