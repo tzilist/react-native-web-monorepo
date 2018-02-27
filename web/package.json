@@ -1,0 +1,15 @@
+{
+	"name": "web",
+	"version": "0.0.1",
+	"private": true,
+	"main": "index.js",
+	"scripts": {
+		"clean": "lerna clean"
+	},
+	"author": "Theodore Zilist",
+	"license": "ISC",
+	"dependencies": {
+		"react": "^16.2.0",
+		"react-dom": "^16.2.0"
+	}
+}
