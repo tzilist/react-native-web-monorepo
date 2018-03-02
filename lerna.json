@@ -2,7 +2,9 @@
 	"lerna": "2.9.0",
 	"packages": [
 		"./mobile",
-		"./web"
+		"./web",
+		"./containers",
+		"./components"
 	],
 	"npmClient": "yarn",
 	"version": "0.0.1"

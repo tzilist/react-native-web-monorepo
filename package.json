@@ -3,10 +3,10 @@
 	"version": "0.0.1",
 	"scripts": {
 		"clean": "lerna clean && rm -r ./web/build",
-		"ios": "bash ./scripts/mobile.sh 'yarn run ios'",
-		"android": "bash ./scripts/mobile.sh 'yarn run android'",
-		"native:dev": "bash ./scripts/mobile.sh 'yarn run start'",
-		"web:dev": "bash ./scripts/web.sh 'yarn run dev'"
+		"ios": "cd ./mobile && yarn run ios",
+		"android": "cd ./mobile && yarn run android",
+		"dev:native": "cd ./mobile && yarn run start",
+		"dev:web": "cd ./web && yarn run dev"
 	},
 	"devDependencies": {
 		"babel-eslint": "^8.2.2",
@@ -17,5 +17,8 @@
 		"eslint-plugin-react": "^7.7.0",
 		"lerna": "^2.9.0"
 	},
-	"license": "ISC"
+	"license": "ISC",
+	"dependencies": {
+		"react": "^16.2.0"
+	}
 }

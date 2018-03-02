@@ -4,25 +4,19 @@ const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-
-const resolvedAliases = {
-  root: ['./src', './assets'],
-};
-
 const BabelLoader = {
   test: /\.js$/,
   exclude: /node_modules/,
   use: {
     loader: 'babel-loader',
     options: {
-      babelrc: false,
       cacheDirectory: true,
       plugins: [
-        ['babel-plugin-module-resolver', resolvedAliases],
-        ['fast-async', { spec: true }],
+        ['module:fast-async', { spec: true }],
+        ['@babel/plugin-proposal-class-properties', { loose: true }],
       ],
       presets: [
-        ['env', {
+        ['@babel/env', {
           targets: {
             browsers: ['last 2 versions'],
           },
@@ -39,7 +33,7 @@ const POSTCSS_LOADER_OPTIONS = {
   plugins() {
     return [
       autoprefixer({
-        browsers: ['last 3 versions'],
+        browsers: ['last 2 versions'],
       }),
     ];
   },
