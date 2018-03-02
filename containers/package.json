@@ -1,8 +1,9 @@
 {
   "name": "containers",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +16,7 @@
     "react-native": "*"
   },
   "dependencies": {
-    "components": "^0.1.0",
+    "components": "^0.2.0",
     "prop-types": "^15.6.1",
     "react": "^16.2.0"
   }
