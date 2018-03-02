@@ -1,6 +1,6 @@
 {
 	"name": "monorepo",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"private": true,
 	"license": "ISC",
 	"scripts": {
@@ -10,7 +10,7 @@
 		"ios": "node node_modules/react-native/local-cli/cli.js run-ios"
 	},
 	"dependencies": {
-		"containers": "0.0.1",
+		"containers": "^0.1.0",
 		"prop-types": "^15.6.1",
 		"react": "16.2.0",
 		"react-native": "^0.54.0"

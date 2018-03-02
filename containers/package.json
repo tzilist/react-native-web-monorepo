@@ -1,6 +1,6 @@
 {
   "name": "containers",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "react-native": "*"
   },
   "dependencies": {
-    "components": "0.0.1",
+    "components": "^0.1.0",
     "prop-types": "^15.6.1",
     "react": "^16.2.0"
   }
